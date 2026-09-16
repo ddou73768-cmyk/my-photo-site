@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Portrait — A photography collection by MOMENT.">
+  <title>Portrait | MOMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-category="portrait">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="MOMENT home">MOMENT</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" hidden><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#categories">WORKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="gallery-page">
+    <header class="gallery-heading">
+      <a class="back-link" href="index.html#categories">← ALL CATEGORIES</a>
+      <h1>Portrait</h1>
+    </header>
+    <div class="gallery-grid" aria-label="Portrait photographs"></div>
+    <noscript><p>Please enable JavaScript to view this gallery.</p></noscript>
+  </main>
+  <dialog class="lightbox" aria-label="Enlarged photograph">
+    <button class="lightbox-close" type="button" aria-label="Close enlarged photograph" autofocus>×</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="">
+      <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Daily — A photography collection by MOMENT.">
+  <title>Daily | MOMENT</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-category="daily">
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="MOMENT home">MOMENT</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" hidden><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#categories">WORKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="gallery-page">
+    <header class="gallery-heading">
+      <a class="back-link" href="index.html#categories">← ALL CATEGORIES</a>
+      <h1>Daily</h1>
+    </header>
+    <div class="gallery-grid daily-gallery" aria-label="Daily photographs">
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 01" aria-haspopup="dialog">
+        <img src="images/daily-01.jpg" alt="Daily photograph 1" width="600" height="900" fetchpriority="high" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 02" aria-haspopup="dialog">
+        <img src="images/daily-02.jpg" alt="Daily photograph 2" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 03" aria-haspopup="dialog">
+        <img src="images/daily-03.jpg" alt="Daily photograph 3" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 04" aria-haspopup="dialog">
+        <img src="images/daily-04.jpg" alt="Daily photograph 4" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 05" aria-haspopup="dialog">
+        <img src="images/daily-05.jpg" alt="Daily photograph 5" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 06" aria-haspopup="dialog">
+        <img src="images/daily-06.jpg" alt="Daily photograph 6" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery-item" type="button" aria-label="Enlarge Daily / 07" aria-haspopup="dialog">
+        <img src="images/daily-07.jpg" alt="Daily photograph 7" width="600" height="900" loading="lazy" decoding="async">
+      </button>
+    </div>
+    <noscript><p>Enable JavaScript to enlarge photographs.</p></noscript>
+  </main>
+  <dialog class="lightbox" aria-label="Enlarged photograph">
+    <button class="lightbox-close" type="button" aria-label="Close enlarged photograph" autofocus>×</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="">
+      <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+    </figure>
+  </dialog>
+</body>
+</html>

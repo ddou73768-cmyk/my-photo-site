@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MOMENT — A personal collection of light, shadow, and stillness.">
+  <meta name="color-scheme" content="light">
+  <title>MOMENT | Photography</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='white' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='3' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="MOMENT home">MOMENT</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu" hidden>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#categories">WORKS</a></li>
+        <!-- 添加实际 href 后删除 role、aria-disabled 和 title。 -->
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero" aria-label="Photography slideshow" aria-roledescription="carousel" tabindex="0">
+      <div class="slides">
+        <!-- 更换 src 和 srcset 即可使用自己的照片。 -->
+        <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+          <img src="images/landscape-01.jpg" alt="Landscape photograph" fetchpriority="high">
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+          <img src="images/still-life-01.jpg" alt="Still life photograph 1" decoding="async">
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+          <img src="images/still-life-06.jpg" alt="Still life photograph 6" decoding="async">
+        </div>
+      </div>
+      <div class="hero-caption">
+        <p class="eyebrow">A STUDY OF LIGHT &amp; TIME</p>
+        <h1>Let time<br>stand still.</h1>
+        <p class="caption-note">Light and shadow, answers within.</p>
+      </div>
+      <div class="carousel-footer">
+        <div class="dots" role="group" aria-label="Choose a photo">
+          <button class="dot is-active" type="button" aria-label="Show photo 1" aria-current="true"></button>
+          <button class="dot" type="button" aria-label="Show photo 2"></button>
+          <button class="dot" type="button" aria-label="Show photo 3"></button>
+        </div>
+      </div>
+      <p class="sr-only" id="slide-status" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p class="no-script">Enable JavaScript to browse the slideshow.</p></noscript>
+    </section>
+    <section id="categories" class="categories" aria-labelledby="categories-title">
+      <header class="section-heading">
+        <h2 id="categories-title">CATEGORIES</h2>
+      </header>
+      <div class="categories-grid">
+        <a class="category-card" href="portrait.html" aria-label="View Portrait photographs">
+          <div class="category-cover">
+            <img src="images/portrait-01.jpg" alt="Portrait photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Portrait</h3>
+        </a>
+        <a class="category-card" href="landscape.html" aria-label="View Landscape photographs">
+          <div class="category-cover">
+            <img src="images/landscape-01.jpg" alt="Landscape photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Landscape</h3>
+        </a>
+        <a class="category-card" href="street.html" aria-label="View Street photographs">
+          <div class="category-cover">
+            <img src="images/street-01.jpg" alt="Street photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Street</h3>
+        </a>
+        <a class="category-card" href="still-life.html" aria-label="View Still Life photographs">
+          <div class="category-cover">
+            <img src="images/still-life-01.jpg" alt="Still Life photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Still Life</h3>
+        </a>
+        <a class="category-card" href="travel.html" aria-label="View Travel photographs">
+          <div class="category-cover">
+            <img src="images/travel-01.jpg" alt="Travel photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Travel</h3>
+        </a>
+        <a class="category-card" href="daily.html" aria-label="View Daily photographs">
+          <div class="category-cover">
+            <img src="images/daily-08.jpg" alt="Daily photograph" width="900" height="675" loading="lazy" decoding="async">
+          </div>
+          <h3>Daily</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
